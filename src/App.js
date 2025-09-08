@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      textAlign: "center",
+      marginTop: "50px",
+      fontFamily: "Arial, sans-serif"
+    }}>
+      <h1>🚀 Hello React!</h1>
+      <p>Ứng dụng React đầu tiên của bạn đã chạy thành công 🎉</p>
+      <button
+        style={{
+          padding: "10px 20px",
+          fontSize: "16px",
+          borderRadius: "8px",
+          border: "none",
+          backgroundColor: "#007bff",
+          color: "#fff",
+          cursor: "pointer"
+        }}
+        onClick={() => alert("Bạn vừa bấm nút!")}
+      >
+        Click me
+      </button>
     </div>
   );
 }
 
 export default App;
+
+
+
